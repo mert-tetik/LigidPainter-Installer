@@ -15,6 +15,8 @@ namespace LigidPainterInstaller
         public Form1()
         {
             InitializeComponent();
+
+            BlendTxtr.blendPictures(pictureBox1, pictureBox2);
         }
     }
 }
