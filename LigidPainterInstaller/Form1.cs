@@ -16,7 +16,15 @@ namespace LigidPainterInstaller
         {
             InitializeComponent();
 
-            BlendTxtr.blendPictures(pictureBox1, pictureBox2);
+            //BlendTxtr.blendPictures(pictureBox1, pictureBox2);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            folderBrowserDialog1.ShowDialog();
+            string exportPath = folderBrowserDialog1.SelectedPath;
+
+            textBox1.Text = exportPath;
         }
     }
 }
